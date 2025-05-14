@@ -11,7 +11,7 @@ const app = express();
 
 // Home Route
 app.get('/', (req, res) => {
-  res.send('Hello, this is a simple Express server!');
+  res.send('Hello, Welcome to PRNV Services Backend API!');
 });
 
 // Ipsum Route
