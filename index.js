@@ -1,8 +1,10 @@
 import express from 'express';
 import { imageUrls } from './src/categories.js'; // Importing imageUrls from categories.js
 import dotenv from 'dotenv';
-dotenv.config(); // Load environment variables from .env file
-const PORT = process.env.PORT || 3500; // Use PORT from .env or default to 3000
+dotenv.config(); 
+
+
+const PORT = process.env.PORT;
 const app = express();
 
 // Home Route
