@@ -1,6 +1,9 @@
 import express from 'express';
-import { imageUrls } from './src/categories.js'; // Importing imageUrls from categories.js
+import { imageUrls } from './src/category_images.js'; // Importing imageUrls from categories.js
 import dotenv from 'dotenv';
+import fs from 'fs';
+import path from 'path';
+
 dotenv.config(); 
 
 const PORT_NUM = process.env.PORT; 
@@ -17,9 +20,7 @@ app.get('/ipsum', (req, res) => {
 });
 
 
-app.get('/all-images', (req, res) => {
-  res.json(imageUrls); 
-});
+app.use('/image', express.static('src/assets/category_images/images'));
 
 // Start Server
 app.listen(PORT_NUM, () => {
