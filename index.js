@@ -23,5 +23,5 @@ app.get('/all-images', (req, res) => {
 
 // Start Server
 app.listen(PORT_NUM, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on http://localhost:${PORT_NUM}`);
 });
