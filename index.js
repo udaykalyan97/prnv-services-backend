@@ -1,6 +1,8 @@
 import express from 'express';
 import { imageUrls } from './src/categories.js'; // Importing imageUrls from categories.js
-
+import dotenv from 'dotenv';
+dotenv.config(); // Load environment variables from .env file
+const PORT = process.env.PORT || 3500; // Use PORT from .env or default to 3000
 const app = express();
 
 // Home Route
@@ -19,7 +21,6 @@ app.get('/all-images', (req, res) => {
 });
 
 // Start Server
-const PORT = 3100;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
