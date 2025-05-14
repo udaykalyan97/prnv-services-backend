@@ -3,7 +3,7 @@ import { imageUrls } from './src/categories.js'; // Importing imageUrls from cat
 import dotenv from 'dotenv';
 dotenv.config(); 
 
-
+const PORT_NUM = process.env.PORT; 
 const app = express();
 
 // Home Route
@@ -22,6 +22,6 @@ app.get('/all-images', (req, res) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
+app.listen(PORT_NUM, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
