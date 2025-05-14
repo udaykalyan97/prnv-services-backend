@@ -7,7 +7,7 @@ export const imageUrls = [
 },
 {
   id:2,
-  categoryImage:"prnv-services-backend-development.up.railway.app/image/227ab8bc89a8a895ad7002b329b855e9.svgs",
+  categoryImage:"prnv-services-backend-development.up.railway.app/image/227ab8bc89a8a895ad7002b329b855e9.svg",
   categoryName:"Carpenter Services",
   
 },
