@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 
 
-const PORT = process.env.PORT;
 const app = express();
 
 // Home Route
@@ -17,9 +16,9 @@ app.get('/ipsum', (req, res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
 });
 
-// All Images Route (Frontend can fetch this as an array)
+
 app.get('/all-images', (req, res) => {
-  res.json(imageUrls); // Send the imageUrls array as a JSON response
+  res.json(imageUrls); 
 });
 
 // Start Server
