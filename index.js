@@ -19,7 +19,9 @@ app.get('/ipsum', (req, res) => {
   res.send('Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
 });
 
-
+app.get('/all-images', (req, res) => {
+  res.json(imageUrls);
+});
 app.use('/image', express.static('src/assets/category_images/images'));
 
 // Start Server
